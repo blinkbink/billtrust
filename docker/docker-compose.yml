@@ -1,0 +1,47 @@
+version: '2'
+services:
+    billtrust:
+        container_name: billtrust-maven
+        env_file:
+            - .env
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: message-server:latest
+        ports:
+            - 8888:8089
+            - 1111:8080
+        volumes:
+            - ./logs:/usr/local/billing/logs
+        environment:
+            TZ: 'Asia/Jakarta'
+            SPRING_APPLICATION_JSON: '{
+            "server.port" : "8089",
+            "http.port" : "8080",
+            "spring.datasource.url"  : "jdbc:postgresql://billtrust.cyod9vrzwm9q.ap-southeast-3.rds.amazonaws.com:5432/billing?useSSL=true",
+            "spring.datasource.username" : "postgres",
+            "spring.datasource.password" : "idtrust12345",
+            "logging.file.name": "./logs/billtrust.log",
+            "server.ssl.key-store":"spring.keystore",
+            "server.ssl.key-store-password":"idtrust12345",
+            "logging.level.kafka":"OFF",
+            "logging.level.org.apache.kafka":"OFF",
+            "logging.level.io.confluent.kafka":"OFF",
+            "spring.rabbitmq.host":"108.137.14.1",
+            "spring.rabbitmq.port":"5672",
+            "spring.rabbitmq.username":"admin",
+            "spring.rabbitmq.password":"password",
+            "billing.rabbitmq.queue":"billtrust",
+            "spring.datasource.hikari.connection-timeout":15000,
+            "spring.datasource.hikari.maximumPoolSize":25,
+            "spring.zipkin.baseUrl":"http://10.2.4.120:32057/",
+            "spring.sleuth.sampler.probability":1.0,
+            "spring.zipkin.service.name":"billtrust",
+            "spring.application.name":"billtrust",
+            "spring.zipkin.sender.type":"web",
+            "spring.sleuth.traceId128":true,
+            "spring.kafka.bootstrap-servers":"108.136.175.29:9092",
+            "server.tomcat.accesslog.enabled":true,
+            "server.tomcat.basedir":"tomcat",
+            "server.tomcat.accesslog.directory":"logs"
+        }'

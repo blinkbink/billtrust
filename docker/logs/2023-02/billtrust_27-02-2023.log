@@ -1,0 +1,1147 @@
+2023-02-27 19:46:19.00413 [INFO ] boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) Starting BillingApplication v0.0.1 using Java 1.8.0_212 on 1eb48fa842c6 with PID 1 (/usr/local/billing/billing.jar started by root in /usr/local/billing)
+2023-02-27 19:46:19.00437 [INFO ] boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:631) No active profile set, falling back to 1 default profile: "default"
+2023-02-27 19:46:21.00307 [INFO ] config.RepositoryConfigurationDelegate.multipleStoresDetected(RepositoryConfigurationDelegate.java:262) Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-27 19:46:21.00314 [INFO ] config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:132) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 19:46:21.00521 [INFO ] config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:201) Finished Spring Data repository scanning in 194 ms. Found 13 JPA repository interfaces.
+2023-02-27 19:46:22.00855 [ERROR] sampling.LocalizedSamplingStrategy.getRuleManifest(LocalizedSamplingStrategy.java:99) Unable to parse null URL. Falling back to default rule set: file:/usr/local/billing/billing.jar!/BOOT-INF/lib/aws-xray-recorder-sdk-core-2.13.0.jar!/com/amazonaws/xray/strategy/sampling/DefaultSamplingRules.json
+2023-02-27 19:46:23.00023 [INFO ] config.DaemonConfiguration.<init>(DaemonConfiguration.java:57) Environment variable AWS_XRAY_DAEMON_ADDRESS is set. Emitting to daemon on address 108.136.138.70:2000.
+2023-02-27 19:46:23.00035 [INFO ] xray.AWSXRayRecorder.<init>(AWSXRayRecorder.java:155) Overriding contextMissingStrategy. Environment variable AWS_XRAY_CONTEXT_MISSING has value: "RUNTIME_ERROR".
+2023-02-27 19:46:23.00042 [INFO ] config.DaemonConfiguration.<init>(DaemonConfiguration.java:57) Environment variable AWS_XRAY_DAEMON_ADDRESS is set. Emitting to daemon on address 108.136.138.70:2000.
+2023-02-27 19:46:23.00054 [INFO ] xray.AWSXRayRecorderBuilder.lambda$build$1(AWSXRayRecorderBuilder.java:313) Collecting trace metadata from com.amazonaws.xray.plugins.EC2Plugin.
+2023-02-27 19:46:23.00056 [WARN ] plugins.EC2Plugin.populateLogReferences(EC2Plugin.java:137) CloudWatch Agent log configuration file not found at /opt/aws/amazon-cloudwatch-agent/etc/log-config.json. Install the CloudWatch Agent on this instance to record log references in X-Ray.
+2023-02-27 19:46:23.00058 [INFO ] config.DaemonConfiguration.<init>(DaemonConfiguration.java:57) Environment variable AWS_XRAY_DAEMON_ADDRESS is set. Emitting to daemon on address 108.136.138.70:2000.
+2023-02-27 19:46:23.00059 [INFO ] xray.AWSXRayRecorder.<init>(AWSXRayRecorder.java:155) Overriding contextMissingStrategy. Environment variable AWS_XRAY_CONTEXT_MISSING has value: "RUNTIME_ERROR".
+2023-02-27 19:46:23.00059 [INFO ] config.DaemonConfiguration.<init>(DaemonConfiguration.java:57) Environment variable AWS_XRAY_DAEMON_ADDRESS is set. Emitting to daemon on address 108.136.138.70:2000.
+2023-02-27 19:46:24.00342 [INFO ] tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) Tomcat initialized with port(s): 8089 (https)
+2023-02-27 19:46:24.00465 [INFO ] logging.DirectJDKLog.log(DirectJDKLog.java:173) Initializing ProtocolHandler ["https-jsse-nio-8089"]
+2023-02-27 19:46:24.00467 [INFO ] logging.DirectJDKLog.log(DirectJDKLog.java:173) Starting service [Tomcat]
+2023-02-27 19:46:24.00467 [INFO ] logging.DirectJDKLog.log(DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-02-27 19:46:24.00640 [INFO ] logging.DirectJDKLog.log(DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+2023-02-27 19:46:24.00642 [INFO ] context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:292) Root WebApplicationContext: initialization completed in 4673 ms
+2023-02-27 19:46:24.00887 [INFO ] hikari.HikariDataSource.getConnection(HikariDataSource.java:110) HikariPool-1 - Starting...
+2023-02-27 19:46:25.00344 [INFO ] hikari.HikariDataSource.getConnection(HikariDataSource.java:123) HikariPool-1 - Start completed.
+2023-02-27 19:46:25.00487 [INFO ] util.LogHelper.logPersistenceUnitInformation(LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 19:46:25.00672 [INFO ] hibernate.Version.logVersion(Version.java:44) HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-27 19:46:26.00029 [INFO ] java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:56) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-27 19:46:26.00222 [INFO ] dialect.Dialect.<init>(Dialect.java:175) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 19:46:27.00710 [INFO ] internal.JtaPlatformInitiator.initiateService(JtaPlatformInitiator.java:52) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 19:46:27.00721 [INFO ] jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:437) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 19:46:28.00591 [INFO ] strategy.FixedSegmentNamingStrategy.<init>(FixedSegmentNamingStrategy.java:45) Environment variable AWS_XRAY_TRACING_NAME or system property com.amazonaws.xray.strategy.tracingName set. Overriding FixedSegmentNamingStrategy constructor argument. Segments generated with this strategy will be named: billing.
+2023-02-27 19:46:29.00940 [WARN ] jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor(JpaBaseConfiguration.java:219) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 19:46:31.00507 [INFO ] logging.DirectJDKLog.log(DirectJDKLog.java:173) Starting ProtocolHandler ["https-jsse-nio-8089"]
+2023-02-27 19:46:31.00659 [INFO ] tomcat.TomcatWebServer.start(TomcatWebServer.java:220) Tomcat started on port(s): 8089 (https) with context path ''
+2023-02-27 19:46:31.00673 [INFO ] connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:638) Attempting to connect to: [108.137.14.1:5672]
+2023-02-27 19:46:31.00874 [INFO ] connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:589) Created new connection: rabbitConnectionFactory#75b21c3b:0/SimpleConnection@5c645b43 [delegate=amqp://admin@108.137.14.1:5672/, localPort= 59378]
+2023-02-27 19:46:32.00053 [INFO ] boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) Started BillingApplication in 13.618 seconds (JVM running for 15.917)
+2023-02-27 19:46:35.00516 [INFO ] log.LogAccessor.info(LogAccessor.java:292) billtrust: partitions assigned: [charge_billing-0]
+2023-02-27 19:46:35.00539 [INFO ] log.LogAccessor.info(LogAccessor.java:292) billtrust: partitions assigned: [reversal_billing-0]
+2023-02-27 19:46:35.00733 [INFO ] logging.DirectJDKLog.log(DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 19:46:35.00733 [INFO ] servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
+2023-02-27 19:46:35.00736 [INFO ] servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) Completed initialization in 3 ms
+2023-02-27 19:46:35.00872 [INFO ] controller.Balances.balances(Balances.java:349) [1.0.0]-[BILLTRUST/INFO] : RAW HEADER 1-63d21121-18959e163c80fe616fb0f704,Root=1-63d21121-18959e163c80fe616fb0f704;Parent=1-63d103a0-606d21ab31c6d4a66de5b3d1
+2023-02-27 19:46:35.00877 [INFO ] controller.Balances.balances(Balances.java:360) [1.0.0]-[BILLTRUST/REQUEST] : {"product":"emeterai","xkey":"ID63bd236df40c83edbe116c55"}
+2023-02-27 19:46:36.00050 [INFO ] controller.Balances.balances(Balances.java:569) [1.0.0]-[BILLTRUST/INFO] : Value balance : 1000000
+2023-02-27 19:46:36.00053 [INFO ] controller.Balances.balances(Balances.java:617) [1.0.0]-[BILLTRUST/INFO] : {"balance":{"product":"emeterai","amount":1000000,"title_id":"Meterai Elektronik","title_en":"E-Meterai","subscription":"prepaid"},"log":"1-63d21121-18959e163c80fe616fb0f704","result_code":"B00","message":"Success","ptime":"0.18070","xkey":"ID63bd236df40c83edbe116c55","timestamp":"2023-02-27T12:46:36.051Z"}
+2023-02-27 19:46:42.00096 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:46:53.00938 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:47:12.00103 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:47:23.00962 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:47:42.00132 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:47:53.00991 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:48:12.00156 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:48:24.00020 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:48:42.00163 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:48:54.00037 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:49:12.00191 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:49:24.00055 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:49:42.00208 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:49:54.00086 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:50:12.00250 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:50:24.00117 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:50:42.00265 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:50:54.00136 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:51:12.00285 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:51:24.00134 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:51:42.00310 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:51:54.00139 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:52:12.00315 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:52:24.00147 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:52:42.00328 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:52:54.00184 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:53:12.00354 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:53:24.00198 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:53:42.00375 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:53:54.00228 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:54:12.00388 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:54:24.00259 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:54:42.00417 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:54:54.00296 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:55:12.00446 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:55:24.00312 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:55:42.00483 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:55:54.00352 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:56:12.00476 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:56:24.00356 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:56:42.00496 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:56:54.00364 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:57:12.00520 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:57:24.00408 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:57:42.00557 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:57:54.00404 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:58:12.00572 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:58:24.00429 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:58:42.00596 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:58:54.00452 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:59:12.00640 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:59:24.00469 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:59:42.00639 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 19:59:54.00475 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:00:12.00651 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:00:24.00486 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:00:42.00668 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:00:54.00517 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:01:12.00689 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:01:24.00529 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:01:42.00717 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:01:54.00558 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:02:12.00753 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:02:24.00590 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:02:42.00783 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:02:54.00590 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:03:12.00816 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:03:24.00614 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:03:42.00840 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:03:54.00642 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:04:12.00852 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:04:24.00675 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:04:42.00890 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:04:54.00691 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:05:12.00914 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:05:24.00731 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:05:42.00914 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:05:54.00752 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:06:12.00944 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:06:24.00751 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:06:42.00969 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:06:54.00776 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:07:13.00002 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:07:24.00785 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:07:43.00015 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:07:54.00822 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:08:13.00046 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:08:24.00832 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:08:43.00081 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:08:47.00214 [INFO ] controller.Topups.add(Topups.java:253) [1.0.0]-[BILLTRUST/INFO] : RAW HEADER 1-63d21121-18959e163c80fe616fb0f704,Root=1-63d21121-18959e163c80fe616fb0f704;Parent=1-63d103a0-606d21ab31c6d4a66de5b3d1
+2023-02-27 20:08:47.00215 [INFO ] controller.Topups.add(Topups.java:263) [1.0.0]-[BILLTRUST/REQUEST] : {"data":[{"product":"emeterai","amount":1000000,"price":10000,"xkey":"ID63bd236df40c83edbe116c55"}],"generate_payment":false,"payment":{"channel":"MANDIRI","name":"Muhammad Iqbal Pratama","mobile_number":"08562144666","email":"iqbal@idtrust.id"}}
+2023-02-27 20:08:47.00368 [INFO ] controller.Topups.add(Topups.java:1352) [1.0.0]-[BILLTRUST/INFO] : {"product":"emeterai","datetime":"2023-02-27 20:08:47.213","invoiceid":"0d0a3ef8-efc3-4ba9-bb4f-0126779cec30","ptime":"0.01083","xkey":"ID63bd236df40c83edbe116c55","status":true,"info":"Success"}
+2023-02-27 20:08:47.00610 [INFO ] service.TopupService.topup(TopupService.java:89) [1.0.0]-[BILLTRUST/INFO] : Time Get SP Balance : 0.07031
+2023-02-27 20:08:47.00696 [INFO ] controller.Topups.add(Topups.java:1385) [1.0.0]-[BILLTRUST/INFO] : PROCESS INSERT COMMIT : 0.32715
+2023-02-27 20:08:47.00699 [INFO ] controller.Topups.add(Topups.java:1422) [1.0.0]-[BILLTRUST/INFO] : {"data":[{"product":"emeterai","datetime":"2023-02-27 20:08:47.213","invoiceid":"0d0a3ef8-efc3-4ba9-bb4f-0126779cec30","ptime":"0.01083","xkey":"ID63bd236df40c83edbe116c55","status":true,"info":"Success"}],"log":"1-63d21121-18959e163c80fe616fb0f704","current_balance":2000000,"result_code":"B00","message":"Success","ptime":"0.48444","timestamp":"2023-02-27T13:08:47.697Z"}
+2023-02-27 20:08:47.00737 [ERROR] entities.EntityImpl.serialize(EntityImpl.java:617) Exception while serializing entity.
+com.fasterxml.jackson.databind.JsonMappingException: failed to lazily initialize a collection of role: id.idtrust.billing.model.Account.bills, could not initialize proxy - no Session (through reference chain: com.amazonaws.xray.entities.SegmentImpl["subsegments"]->java.util.ArrayList[3]->com.amazonaws.xray.entities.SubsegmentImpl["metadata"]->java.util.HashMap["Arguments"]->java.util.HashMap["ArrayList"]->java.util.ArrayList[0]->id.idtrust.billing.model.Batch["account"]->id.idtrust.billing.model.Account["bills"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:392)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:351)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:316)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:782)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeOptionalFields(MapSerializer.java:869)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:760)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:720)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:35)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeOptionalFields(MapSerializer.java:869)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:760)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:720)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:35)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4568)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3821)
+	at com.amazonaws.xray.entities.EntityImpl.serialize(EntityImpl.java:615)
+	at com.amazonaws.xray.emitters.UDPEmitter.sendSegment(UDPEmitter.java:87)
+	at com.amazonaws.xray.AWSXRayRecorder.sendSegment(AWSXRayRecorder.java:195)
+	at com.amazonaws.xray.AWSXRayRecorder.endSegment(AWSXRayRecorder.java:548)
+	at com.amazonaws.xray.javax.servlet.AWSXRayServletFilter.postFilter(AWSXRayServletFilter.java:447)
+	at com.amazonaws.xray.javax.servlet.AWSXRayServletFilter.doFilter(AWSXRayServletFilter.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at id.idtrust.billing.util.LogSystem.doFilterInternal(LogSystem.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: id.idtrust.billing.model.Account.bills, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.readSize(AbstractPersistentCollection.java:162)
+	at org.hibernate.collection.internal.PersistentSet.isEmpty(PersistentSet.java:174)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.isEmpty(CollectionSerializer.java:80)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.isEmpty(CollectionSerializer.java:25)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:712)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	... 68 more
+2023-02-27 20:08:54.00862 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:09:13.00104 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:09:24.00881 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:09:43.00107 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:09:54.00910 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:10:13.00133 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:10:24.00940 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:10:43.00158 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:10:54.00940 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:11:13.00189 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:11:24.00968 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:11:43.00226 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:11:54.00989 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:12:13.00252 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:12:25.00012 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:12:43.00281 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:12:55.00040 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:13:13.00315 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:13:25.00063 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:13:43.00343 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:13:55.00095 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:14:13.00371 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:14:25.00127 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:14:43.00400 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:14:55.00168 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:15:13.00429 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:15:25.00183 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:15:43.00467 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:15:55.00202 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:16:13.00491 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:16:25.00225 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:16:43.00521 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:16:55.00263 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:17:13.00548 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:17:25.00289 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:17:43.00579 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:17:55.00303 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:18:13.00601 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:18:25.00339 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:18:43.00606 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:18:55.00362 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:19:13.00636 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:19:25.00394 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:19:43.00669 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:19:55.00396 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:20:13.00689 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:20:25.00425 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:20:43.00721 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:20:55.00436 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:21:13.00729 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:21:25.00463 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:21:43.00752 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:21:55.00505 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:22:13.00780 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:22:25.00525 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:22:43.00813 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:22:55.00555 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:23:13.00828 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:23:25.00586 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:23:43.00838 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:23:55.00616 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:24:13.00854 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:24:25.00646 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:24:43.00883 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:24:55.00681 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:25:13.00893 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:25:25.00707 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:25:43.00915 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:25:55.00734 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:26:13.00945 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:26:25.00761 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:26:43.00975 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:26:55.00792 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:27:14.00011 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:27:25.00821 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:27:44.00041 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:27:55.00844 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:28:14.00038 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:28:25.00870 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:28:44.00066 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:28:55.00906 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:29:14.00095 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:29:25.00932 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:29:44.00126 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:29:55.00962 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:30:14.00138 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:30:25.00966 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:30:44.00171 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:30:55.00982 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:31:14.00198 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:31:26.00018 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:31:44.00228 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:31:56.00037 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:32:14.00248 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:32:26.00062 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:32:44.00263 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:32:56.00096 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:33:14.00292 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:33:26.00124 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:33:44.00316 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:33:56.00151 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:34:14.00358 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:34:26.00182 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:34:44.00378 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:34:56.00212 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:35:14.00380 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:35:26.00217 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:35:44.00410 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:35:56.00251 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:36:14.00436 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:36:26.00277 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:36:44.00470 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:36:56.00298 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:37:14.00477 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:37:26.00323 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:37:44.00481 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:37:56.00354 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:38:14.00489 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:38:26.00366 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:38:44.00510 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:38:56.00407 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:39:14.00528 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:39:26.00429 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:39:44.00559 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:39:56.00461 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:40:14.00557 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:40:26.00481 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:40:44.00588 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:40:56.00484 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:41:14.00615 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:41:26.00487 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:41:44.00647 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:41:56.00516 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:42:14.00656 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:42:26.00544 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:42:44.00680 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:42:56.00578 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:43:14.00689 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:43:26.00603 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:43:44.00721 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:43:56.00605 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:44:14.00749 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:44:26.00639 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:44:44.00768 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:44:56.00669 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:45:14.00787 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:45:26.00691 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:45:44.00817 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:45:56.00719 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:46:14.00831 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:46:26.00753 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:46:44.00857 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:46:56.00782 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:47:14.00871 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:47:26.00810 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:47:44.00891 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:47:56.00844 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:48:14.00912 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:48:26.00871 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:48:44.00941 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:48:56.00900 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:49:14.00970 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:49:26.00932 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:49:44.00997 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:49:56.00959 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:50:15.00036 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:50:27.00008 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:50:45.00054 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:50:57.00024 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:51:15.00087 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:51:27.00051 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:51:45.00116 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:51:57.00081 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:52:15.00139 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:52:27.00120 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:52:45.00181 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:52:57.00113 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:53:15.00195 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:53:27.00146 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:53:45.00226 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:53:57.00176 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:54:15.00241 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:54:27.00200 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:54:45.00266 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:54:57.00207 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:55:15.00296 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:55:27.00235 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:55:45.00326 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:55:57.00268 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:56:15.00327 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:56:27.00301 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:56:45.00360 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:56:57.00319 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:57:15.00381 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:57:27.00349 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:57:45.00383 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:57:57.00378 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:58:15.00390 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:58:27.00412 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:58:45.00430 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:58:57.00440 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:59:15.00459 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:59:27.00477 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:59:45.00464 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 20:59:57.00484 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:00:15.00477 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:00:27.00508 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:00:45.00509 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:00:57.00521 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:01:15.00535 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:01:27.00547 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:01:45.00564 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:01:57.00579 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:02:15.00589 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:02:27.00603 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:02:45.00601 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:02:57.00632 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:03:15.00619 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:03:27.00648 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:03:45.00649 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:03:57.00677 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:04:15.00675 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:04:27.00709 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:04:45.00707 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:04:57.00720 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:05:15.00736 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:05:27.00748 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:05:45.00775 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:05:57.00759 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:06:15.00788 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:06:27.00791 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:06:45.00805 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:06:57.00792 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:07:15.00815 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:07:27.00820 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:07:45.00839 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:07:57.00851 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:08:15.00872 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:08:27.00878 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:08:45.00891 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:08:57.00909 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:09:15.00921 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:09:27.00914 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:09:45.00953 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:09:57.00940 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:10:15.00986 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:10:27.00951 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:10:46.00012 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:10:57.00989 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:11:16.00043 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:11:28.00014 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:11:46.00064 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:11:58.00049 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:12:16.00096 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:12:28.00047 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:12:46.00114 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:12:58.00074 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:13:16.00143 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:13:28.00106 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:13:46.00164 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:13:58.00133 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:14:16.00192 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:14:28.00140 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:14:46.00214 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:14:58.00166 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:15:16.00244 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:15:28.00194 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:15:46.00280 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:15:58.00223 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:16:16.00289 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:16:28.00254 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:16:46.00311 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:16:58.00287 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:17:16.00313 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:17:28.00313 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:17:46.00340 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:17:58.00345 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:18:16.00372 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:18:28.00373 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:18:46.00401 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:18:58.00409 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:19:16.00431 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:19:28.00418 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:19:46.00448 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:19:58.00454 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:20:16.00480 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:20:28.00482 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:20:46.00505 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:20:58.00516 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:21:16.00543 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:21:28.00541 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:21:46.00563 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:21:58.00565 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:22:16.00573 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:22:28.00589 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:22:46.00602 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:22:58.00620 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:23:16.00640 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:23:28.00639 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:23:46.00660 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:23:58.00652 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:24:16.00667 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:24:28.00663 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:24:46.00688 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:24:58.00668 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:25:16.00717 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:25:28.00713 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:25:46.00735 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:25:58.00718 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:26:16.00759 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:26:28.00747 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:26:46.00787 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:26:58.00775 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:27:16.00804 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:27:28.00803 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:27:46.00834 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:27:58.00834 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:28:16.00863 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:28:28.00861 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:28:46.00894 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:28:58.00876 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:29:16.00925 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:29:28.00909 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:29:46.00954 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:29:58.00932 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:30:16.00988 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:30:28.00962 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:30:47.00021 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:30:58.00993 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:31:17.00047 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:31:28.00996 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:31:47.00086 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:31:59.00002 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:32:17.00099 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:32:29.00031 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:32:47.00130 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:32:59.00051 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:33:17.00173 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:33:29.00069 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:33:47.00175 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:33:59.00077 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:34:17.00210 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:34:29.00084 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:34:47.00238 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:34:59.00115 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:35:17.00267 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:35:29.00141 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:35:47.00298 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:35:59.00169 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:36:17.00330 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:36:29.00202 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:36:47.00359 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:36:59.00214 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:37:17.00388 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:37:29.00239 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:37:47.00416 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:37:59.00248 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:38:17.00431 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:38:29.00269 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:38:47.00457 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:38:59.00281 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:39:17.00477 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:39:29.00302 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:39:47.00496 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:39:59.00342 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:40:17.00505 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:40:29.00371 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:40:47.00532 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:40:59.00389 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:41:17.00566 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:41:29.00421 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:41:47.00575 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:41:59.00448 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:42:17.00601 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:42:29.00477 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:42:47.00642 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:42:59.00508 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:43:17.00661 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:43:29.00540 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:43:47.00692 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:43:59.00558 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:44:17.00721 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:44:29.00582 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:44:47.00758 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:44:59.00610 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:45:17.00779 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:45:29.00651 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:45:47.00809 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:45:59.00670 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:46:17.00836 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:46:29.00704 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:46:47.00850 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:46:59.00721 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:47:17.00880 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:47:29.00750 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:47:47.00911 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:47:59.00781 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:48:17.00942 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:48:29.00814 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:48:47.00972 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:48:59.00838 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:49:18.00005 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:49:29.00882 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:49:48.00043 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:49:59.00899 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:50:18.00044 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:50:29.00930 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:50:48.00077 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:50:59.00939 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:51:18.00084 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:51:29.00971 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:51:48.00107 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:52:00.00010 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:52:18.00112 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:52:30.00026 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:52:48.00145 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:53:00.00071 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:53:18.00156 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:53:30.00055 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:53:48.00172 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:54:00.00090 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:54:18.00201 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:54:30.00114 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:54:48.00225 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:55:00.00139 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:55:18.00252 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:55:30.00158 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:55:48.00274 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:56:00.00189 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:56:18.00309 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:56:30.00226 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:56:48.00335 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:57:00.00240 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:57:18.00362 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:57:30.00253 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:57:48.00394 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:58:00.00273 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:58:18.00421 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:58:30.00282 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:58:48.00428 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:59:00.00313 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:59:18.00435 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:59:30.00343 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 21:59:48.00459 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:00:00.00379 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:00:18.00473 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:00:30.00401 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:00:48.00475 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:01:00.00449 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:01:18.00481 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:01:30.00460 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:01:48.00514 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:02:00.00491 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:02:18.00539 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:02:30.00502 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:02:48.00559 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:03:00.00532 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:03:18.00589 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:03:30.00542 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:03:48.00624 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:04:00.00546 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:04:18.00641 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:04:30.00579 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:04:48.00666 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:05:00.00595 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:05:18.00697 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:05:30.00623 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:05:48.00708 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:06:00.00650 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:06:18.00721 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:06:30.00679 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:06:48.00741 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:07:00.00720 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:07:18.00769 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:07:30.00742 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:07:48.00795 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:08:00.00774 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:08:18.00821 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:08:30.00798 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:08:48.00838 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:09:00.00800 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:09:18.00865 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:09:30.00834 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:09:48.00900 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:10:00.00859 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:10:18.00925 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:10:30.00889 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:10:48.00953 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:11:00.00920 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:11:18.00974 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:11:30.00938 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:11:49.00004 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:12:00.00975 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:12:19.00035 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:12:30.00999 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:12:49.00063 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:13:01.00004 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:13:19.00095 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:13:31.00035 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:13:49.00131 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:14:01.00049 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:14:19.00153 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:14:31.00067 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:14:49.00184 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:15:01.00090 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:15:19.00211 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:15:31.00117 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:15:49.00241 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:16:01.00136 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:16:19.00271 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:16:31.00167 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:16:49.00301 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:17:01.00198 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:17:19.00336 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:17:31.00227 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:17:49.00356 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:18:01.00245 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:18:19.00384 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:18:31.00261 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:18:49.00414 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:19:01.00290 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:19:19.00442 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:19:31.00322 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:19:49.00479 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:20:01.00332 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:20:19.00501 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:20:31.00344 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:20:49.00504 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:21:01.00376 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:21:19.00529 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:21:31.00411 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:21:49.00555 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:22:01.00431 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:22:19.00583 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:22:31.00463 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:22:49.00590 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:23:01.00482 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:23:19.00617 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:23:31.00512 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:23:49.00645 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:24:01.00536 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:24:19.00656 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:24:31.00565 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:24:49.00685 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:25:01.00583 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:25:19.00714 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:25:31.00610 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:25:49.00727 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:26:01.00616 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:26:19.00755 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:26:31.00632 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:26:49.00783 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:27:01.00663 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:27:19.00808 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:27:31.00694 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:27:49.00839 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:28:01.00715 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:28:19.00847 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:28:31.00716 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:28:49.00878 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:29:01.00749 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:29:19.00908 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:29:31.00768 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:29:49.00927 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:30:01.00826 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:30:19.00967 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:30:31.00827 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:30:49.00974 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:31:01.00856 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:31:19.00997 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:31:31.00887 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:31:50.00032 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:32:01.00917 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:32:20.00052 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:32:31.00915 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:32:50.00081 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:33:01.00949 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:33:20.00112 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:33:31.00976 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:33:50.00145 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:34:02.00013 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:34:20.00171 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:34:32.00018 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:34:50.00194 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:35:02.00054 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:35:20.00240 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:35:32.00082 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:35:50.00237 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:36:02.00107 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:36:20.00239 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:36:32.00136 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:36:50.00267 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:37:02.00147 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:37:20.00298 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:37:32.00151 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:37:50.00328 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:38:02.00186 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:38:20.00360 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:38:32.00207 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:38:50.00397 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:39:02.00228 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:39:20.00406 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:39:32.00257 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:39:50.00419 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:40:02.00262 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:40:20.00423 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:40:32.00290 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:40:50.00460 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:41:02.00307 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:41:20.00484 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:41:32.00338 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:41:50.00511 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:42:02.00366 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:42:20.00542 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:42:32.00380 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:42:50.00572 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:43:02.00409 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:43:20.00606 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:43:32.00438 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:43:50.00634 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:44:02.00465 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:44:20.00664 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:44:32.00490 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:44:50.00697 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:45:02.00509 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:45:20.00706 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:45:32.00533 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:45:50.00736 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:46:02.00540 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:46:20.00764 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:46:32.00570 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:46:50.00797 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:47:02.00607 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:47:20.00822 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:47:32.00622 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:47:50.00854 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:48:02.00638 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:48:20.00880 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:48:32.00659 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:48:50.00888 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:49:02.00679 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:49:20.00914 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:49:32.00712 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:49:50.00936 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:50:02.00734 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:50:20.00943 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:50:32.00761 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:50:50.00974 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:51:02.00789 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:51:21.00000 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:51:32.00797 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:51:51.00019 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:52:02.00797 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:52:21.00054 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:52:32.00829 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:52:51.00062 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:53:02.00861 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:53:21.00092 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:53:32.00887 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:53:51.00124 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:54:02.00916 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:54:21.00152 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:54:32.00942 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:54:51.00175 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:55:02.00963 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:55:21.00204 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:55:32.00986 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:55:51.00231 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:56:02.00993 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:56:21.00255 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:56:33.00023 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:56:51.00265 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:57:03.00030 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:57:21.00296 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:57:33.00056 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:57:51.00328 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:58:03.00085 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:58:21.00355 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:58:33.00115 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:58:51.00381 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:59:03.00134 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:59:21.00411 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:59:33.00165 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 22:59:51.00421 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:00:03.00178 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:00:21.00433 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:00:33.00196 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:00:51.00466 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:01:03.00225 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:01:21.00498 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:01:33.00232 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:01:51.00502 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:02:03.00246 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:02:21.00532 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:02:33.00275 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:02:51.00562 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:03:03.00307 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:03:21.00594 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:03:33.00336 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:03:51.00631 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:04:03.00351 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:04:21.00652 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:04:33.00385 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:04:51.00665 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:05:03.00414 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:05:21.00671 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:05:33.00455 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:05:51.00696 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:06:03.00473 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:06:21.00726 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:06:33.00506 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:06:51.00756 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:07:03.00527 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:07:21.00776 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:07:33.00568 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:07:51.00805 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:08:03.00586 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:08:21.00852 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:08:33.00623 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:08:51.00846 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:09:03.00624 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:09:21.00847 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:09:33.00655 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:09:51.00862 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:10:03.00685 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:10:21.00893 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:10:33.00717 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:10:51.00923 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:11:03.00745 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:11:21.00952 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:11:33.00765 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:11:51.00982 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:12:03.00796 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:12:22.00007 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:12:33.00797 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:12:52.00028 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:13:03.00831 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:13:22.00058 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:13:33.00859 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:13:52.00083 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:14:03.00889 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:14:22.00115 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:14:33.00899 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:14:52.00139 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:15:03.00929 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:15:22.00169 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:15:33.00957 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:15:52.00200 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:16:03.00987 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:16:22.00216 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:16:33.00994 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:16:52.00239 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:17:04.00021 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:17:22.00267 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:17:34.00037 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:17:52.00293 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:18:04.00068 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:18:22.00312 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:18:34.00084 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:18:52.00344 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:19:04.00086 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:19:22.00345 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:19:34.00113 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:19:52.00376 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:20:04.00125 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:20:22.00401 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:20:34.00143 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:20:52.00431 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:21:04.00156 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:21:22.00462 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:21:34.00165 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:21:52.00503 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:22:04.00194 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:22:22.00502 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:22:34.00221 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:22:52.00527 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:23:04.00261 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:23:22.00535 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:23:34.00284 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:23:52.00564 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:24:04.00314 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:24:22.00574 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:24:34.00342 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:24:52.00597 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:25:04.00364 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:25:22.00630 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:25:34.00388 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:25:52.00655 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:26:04.00415 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:26:22.00688 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:26:34.00435 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:26:52.00714 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:27:04.00438 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:27:22.00743 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:27:34.00454 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:27:52.00751 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:28:04.00480 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:28:22.00773 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:28:34.00511 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:28:52.00807 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:29:04.00545 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:29:22.00820 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:29:34.00574 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:29:52.00851 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:30:04.00585 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:30:22.00881 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:30:34.00589 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:30:52.00913 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:31:04.00608 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:31:22.00942 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:31:34.00635 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:31:52.00968 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:32:04.00661 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:32:23.00002 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:32:34.00690 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:32:53.00037 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:33:04.00721 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:33:23.00059 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:33:34.00747 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:33:53.00089 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:34:04.00779 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:34:23.00095 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:34:34.00805 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:34:53.00124 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:35:04.00810 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:35:23.00152 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:35:34.00840 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:35:53.00182 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:36:04.00859 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:36:23.00213 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:36:34.00876 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:36:53.00244 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:37:04.00906 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:37:23.00274 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:37:34.00936 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:37:53.00305 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:38:04.00967 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:38:23.00334 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:38:34.00983 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:38:53.00342 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:39:05.00014 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:39:23.00364 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:39:35.00034 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:39:53.00398 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:40:05.00052 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:40:23.00417 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:40:35.00064 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:40:53.00459 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:41:05.00075 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:41:23.00472 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:41:35.00083 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:41:53.00506 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:42:05.00113 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:42:23.00527 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:42:35.00143 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:42:53.00531 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:43:05.00170 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:43:23.00544 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:43:35.00197 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:43:53.00551 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:44:05.00208 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:44:23.00583 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:44:35.00213 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:44:53.00614 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:45:05.00257 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:45:23.00639 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:45:35.00251 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:45:53.00666 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:46:05.00282 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:46:23.00695 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:46:35.00295 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:46:53.00703 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:47:05.00326 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:47:23.00734 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:47:35.00341 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:47:53.00768 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:48:05.00366 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:48:23.00795 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:48:35.00402 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:48:53.00817 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:49:05.00399 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:49:23.00823 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:49:35.00414 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:49:53.00847 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:50:05.00438 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:50:23.00878 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:50:35.00479 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:50:53.00907 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:51:05.00494 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:51:23.00938 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:51:35.00511 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:51:53.00961 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:52:05.00535 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:52:23.00981 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:52:35.00566 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:52:53.00998 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:53:05.00592 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:53:24.00046 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:53:35.00613 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:53:54.00048 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:54:05.00630 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:54:24.00078 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:54:35.00674 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:54:54.00108 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:55:05.00698 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:55:24.00141 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:55:35.00696 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:55:54.00152 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:56:05.00699 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:56:24.00183 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:56:35.00738 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:56:54.00212 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:57:05.00764 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:57:24.00231 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:57:35.00758 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:57:54.00247 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:58:05.00788 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:58:24.00251 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:58:35.00827 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:58:54.00279 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:59:05.00839 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:59:24.00291 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:59:35.00872 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}
+2023-02-27 23:59:54.00317 [INFO ] controller.HealthCheck.get(HealthCheck.java:31) [1.0.0]-[BILLTRUST/INFO] : {"version":"v1.0.0"}

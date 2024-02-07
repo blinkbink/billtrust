@@ -1,0 +1,16 @@
+{
+  "serviceName": "XRayInstrumentedService",
+  "contextMissingStrategy": "LOG_ERROR",
+  "daemonAddress": "108.136.138.70:2000",
+  "tracingEnabled": true,
+  "samplingStrategy": "CENTRAL",
+  "traceIdInjectionPrefix": "prefix",
+  "samplingRulesManifest": "/path/to/manifest",
+  "awsServiceHandlerManifest": "/path/to/manifest",
+  "awsSdkVersion": 2,
+  "maxStackTraceLength": 50,
+  "streamingThreshold": 100,
+  "traceIdInjection": true,
+  "pluginsEnabled": true,
+  "collectSqlQueries": false
+}

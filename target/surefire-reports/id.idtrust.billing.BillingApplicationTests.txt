@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: id.idtrust.billing.BillingApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.412 s - in id.idtrust.billing.BillingApplicationTests

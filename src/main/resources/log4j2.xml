@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSSSS} [%X{traceId}/%X{spanId}] [%-5level] %C{2}.%M(%F:%L) [%X{tokenId}] %msg%n%throwable" />
+        </Console>
+
+        <RollingFile name="RollingFile"
+                     fileName="./logs/billtrust.log"
+                     filePattern="./logs/$${date:yyyy-MM}/billtrust_%d{dd-MM-yyyy}.log">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSSSS} [%X{traceId}/%X{spanId}] [%-5level] %C{2}.%M(%F:%L) [%X{tokenId}] %msg%n%throwable</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- rollover on startup, daily and when the file reachesx
+                    10 MegaBytes -->
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy
+                        size="10 MB" />
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- LOG everything at INFO level -->
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </Root>
+        <logger name="kafka" level="OFF"/>
+        <logger name="io.confluent.kafka" level="OFF"/>
+        <Logger name="id.idtrust" includeLocation="true" level="debug"/>
+    </Loggers>`
+
+</Configuration>
