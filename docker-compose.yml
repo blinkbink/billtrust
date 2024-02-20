@@ -18,9 +18,9 @@ services:
             SPRING_APPLICATION_JSON: '{
             "server.port" : "8089",
             "http.port" : "8080",
-            "spring.datasource.url"  : "jdbc:postgresql://billtrust.cyod9vrzwm9q.ap-southeast-3.rds.amazonaws.com:5432/billing?useSSL=true",
-            "spring.datasource.username" : "postgres",
-            "spring.datasource.password" : "idtrust12345",
+            "spring.datasource.url"  : "",
+            "spring.datasource.username" : "",
+            "spring.datasource.password" : "",
             "logging.file.name": "./logs/billtrust.log",
             "logging.level.kafka":"OFF",
             "logging.level.org.apache.kafka":"OFF",
